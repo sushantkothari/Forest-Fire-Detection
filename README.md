@@ -72,6 +72,11 @@ The model achieves high accuracy in detecting forest fires. Key performance metr
 Actual No Fire        1740            123
 Actual Fire            281           2849
 ```
+|                  | Predicted No Fire | Predicted Fire |
+|------------------|-------------------|----------------|
+| Actual No Fire   | 1740              | 123            |
+| Actual Fire      | 281               | 2849           |
+
 
 ### Classification Report
 ```
