@@ -67,11 +67,7 @@ The model architecture is based on EfficientNetB0 with additional layers:
 The model achieves high accuracy in detecting forest fires. Key performance metrics include:
 
 ### Confusion Matrix
-```
-             Predicted No Fire  Predicted Fire
-Actual No Fire        1740            123
-Actual Fire            281           2849
-```
+
 |                  | Predicted No Fire | Predicted Fire |
 |------------------|-------------------|----------------|
 | Actual No Fire   | 1740              | 123            |
@@ -79,14 +75,17 @@ Actual Fire            281           2849
 
 
 ### Classification Report
-```
-             Precision    Recall  F1-Score   Support
-Fire            0.86       0.93      0.90      1863
-No Fire         0.96       0.91      0.93      3130
-Accuracy                             0.92      4993
-Macro Avg       0.91       0.92      0.91      4993
-Weighted Avg    0.92       0.92      0.92      4993
-```
+
+|                 | Precision | Recall | F1-Score | Support |
+|-----------------|-----------|--------|----------|---------|
+| Fire            | 0.86      | 0.93   | 0.90     | 1863    |
+| No Fire         | 0.96      | 0.91   | 0.93     | 3130    |
+| Accuracy        |           |        | 0.92     | 4993    | 
+| Macro Avg       | 0.91      | 0.92   | 0.91     | 4993    |
+| Weighted Avg    | 0.92      | 0.92   | 0.92     | 4993    |
+
+
+
 
 The model demonstrates strong performance with an overall accuracy of 92%. It shows particularly high precision in detecting non-fire images (96%) and high recall for fire images (93%), indicating a good balance between minimizing false positives and false negatives.
 
