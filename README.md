@@ -42,10 +42,6 @@ To set up the project environment:
    ```
    cd forest-fire-detection
    ```
-3. Install the required packages:
-   ```
-   pip install -r requirements.txt
-   ```
 
 ## Usage
 
