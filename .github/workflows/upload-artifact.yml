@@ -1,0 +1,15 @@
+name: Upload Artifact
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Upload best_model.h5
+        uses: actions/upload-artifact@v2
+        with:
+          name: best_model
+          path: path/to/your/best_model.h5
