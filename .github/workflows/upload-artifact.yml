@@ -1,15 +1,20 @@
 name: Upload Artifact
 
-on: [push]
+on:
+  push:
+    branches:
+      - main  # Change this to your branch name if it's different
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Upload best_model.h5
+      - name: Checkout repository content
+        uses: actions/checkout@v2
+
+      - name: Upload best_model.h5 as an artifact
         uses: actions/upload-artifact@v2
         with:
           name: best_model
-          path: path/to/your/best_model.h5
+          path: best_model.h5  # Change this to the actual path to your file
